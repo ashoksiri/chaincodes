@@ -492,7 +492,7 @@ func (t *MovieChaincode) getMovieShows(stub shim.ChaincodeStubInterface, args []
 func (t *MovieChaincode) getSeat(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 
 	if len(args) < 2 {
-		return shim.Error("Invalid Movie Id ....")
+		return shim.Error("InSufficient Args for Transactions ....")
 	}
 
 	TicketId := args[0]
